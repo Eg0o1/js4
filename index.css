@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 12px;
+    background: linear-gradient(90deg,hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background-color: #fff;
+    width: 860px;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 30px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: -6px 9px 26px -8px;
+        background-image: url(images/bg-pattern-desktop.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+p{width: 250px;}
+.right-sec{
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    width: 50%;
+}
+.left-sec{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+.main-ph{
+    z-index: 0;
+    position: absolute;
+    bottom: -166px;
+    left: -150px;
+}
+.sec-ph{position: absolute;
+    top: 340px;
+    left: 330px;
+}
+
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.down{
+    height: 10px;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    padding-bottom: 10px;
+}
+h4{
+    margin-bottom: 10px;
+}
+h4:hover{
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+hr{
+    margin: 10px;
+    color: hsl(240, 6%, 50%);
+    
+}
+h1{
+    font-size: 30px;
+    /* margin: 20px; */
+    text-align: left;
+}
+.mob{
+    display: none;
+}
+.hide{display: none;}
+
+@media(max-width:768px){
+.container{width: 400px;
+    height: 550px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+overflow: visible;
+background-image: url(images/bg-pattern-mobile.svg);}
+.left-sec{margin-bottom: 180px;}
+.arrow{gap: 100px;}
+h1{text-align: center;}
+.main-ph, .sec-ph{display: none;}
+.mob{display: block;
+}
+}
